@@ -62,10 +62,11 @@ https://drive.google.com/file/d/1jegRRGWBNYQy4Y-_ngyL0wPZaauhb6xu/view
 ## ▶️ How to run locally
 
 1. Clone the repo:
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/Uditeshjha/Home-Credit-Default-Risk---Dashboard.git
 
-2. Create & activate a virtual environment:
+cd Home-Credit-Default-Risk---Dashboard
+
+3. Create & activate a virtual environment:
 ### macOS / Linux
 python -m venv .venv
 source .venv/bin/activate
