@@ -108,4 +108,6 @@ streamlit run app/Home.py
 
 **Built by: Uditesh Jha**
 
+**Email: jhauditesh@gmail.com**
+
 **Dataset: Home Credit Default Risk(application_train.csv)**
