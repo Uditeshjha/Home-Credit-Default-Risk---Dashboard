@@ -66,11 +66,11 @@ git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
 
 2. Create & activate a virtual environment:
-# macOS / Linux
+### macOS / Linux
 python -m venv .venv
 source .venv/bin/activate
 
-# Windows (PowerShell)
+### Windows (PowerShell)
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 
@@ -104,3 +104,4 @@ streamlit run app/Home.py
 **Built by: Uditesh Jha**
 
 **Dataset: Home Credit Default Risk(application_train.csv)**
+
