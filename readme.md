@@ -64,7 +64,7 @@ https://drive.google.com/file/d/1jegRRGWBNYQy4Y-_ngyL0wPZaauhb6xu/view
 1. Clone the repo:
 git clone https://github.com/Uditeshjha/Home-Credit-Default-Risk---Dashboard.git
 
-cd Home-Credit-Default-Risk---Dashboard
+2. cd Home-Credit-Default-Risk---Dashboard
 
 3. Create & activate a virtual environment:
 ### macOS / Linux
@@ -75,12 +75,12 @@ source .venv/bin/activate
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 
-3. Install dependencies:
+4. Install dependencies:
 pip install -r requirements.txt
 
-4. Ensure dataset is present at data/raw/application_train.csv
+5. Ensure dataset is present at data/raw/application_train.csv
 
-5. Run the app:
+6. Run the app:
 streamlit run app/Home.py
 
 ## 🚀 Future scope / enhancements
