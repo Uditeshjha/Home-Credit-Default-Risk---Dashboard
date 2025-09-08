@@ -149,7 +149,7 @@ with c2:
 c1,c2 = st.columns(2)
 with c1:
     # 5) Scatter / jitter — Employment Years vs TARGET
-    st.markdown("**5) Employment years vs TARGET (jittered)**")
+    st.markdown("**5) Employment years vs TARGET**")
     if "EMPLOYMENT_YEARS" in df.columns and "TARGET" in df.columns:
         fig, ax = plt.subplots(figsize=(6,3))
         # jitter target on y slightly for visualization: plot employment years vs target with small jitter
@@ -162,7 +162,7 @@ with c1:
 
 with c2:
     # 6) Boxplot — Credit by Education
-    st.markdown("**6) Credit by Education (boxplot)**")
+    st.markdown("**6) Credit by Education**")
     if "NAME_EDUCATION_TYPE" in df.columns and "AMT_CREDIT" in df.columns:
         fig, ax = plt.subplots(figsize=(6,3))
         order = df.groupby("NAME_EDUCATION_TYPE")["AMT_CREDIT"].median().sort_values(ascending=False).index
@@ -175,7 +175,7 @@ with c2:
 c1,c2 = st.columns(2)
 with c1:
     # 7) Boxplot — Income by Family Status
-    st.markdown("**7) Income by Family Status (boxplot)**")
+    st.markdown("**7) Income by Family Status**")
     if "NAME_FAMILY_STATUS" in df.columns and "AMT_INCOME_TOTAL" in df.columns:
         fig, ax = plt.subplots(figsize=(6,3))
         order = df.groupby("NAME_FAMILY_STATUS")["AMT_INCOME_TOTAL"].median().sort_values(ascending=False).index
@@ -187,7 +187,7 @@ with c1:
 
 with c2:
     # 8) Pair Plot — Income, Credit, Annuity, TARGET (sample for speed)
-    st.markdown("**8) Pair plot (sampled)**")
+    st.markdown("**8) Pair plot**")
     pair_vars = [c for c in ["AMT_INCOME_TOTAL","AMT_CREDIT","AMT_ANNUITY","TARGET"] if c in df.columns]
     if len(pair_vars) >= 2:
         sample = df[pair_vars].dropna().sample(n=min(1000, len(df)), random_state=42)
@@ -201,7 +201,7 @@ with c2:
 c1,c2 = st.columns(2)
 with c1:
     # 9) Filtered Bar — Default Rate by Gender (responsive to sidebar)
-    st.markdown("**9) Default rate by Gender (filtered)**")
+    st.markdown("**9) Default rate by Gender**")
     if "CODE_GENDER" in df.columns:
         grp = df.groupby("CODE_GENDER")["TARGET"].mean().sort_values(ascending=False)
         fig, ax = plt.subplots(figsize=(4,3))
@@ -213,7 +213,7 @@ with c1:
 
 with c2:
     # 10) Filtered Bar — Default Rate by Education (responsive)
-    st.markdown("**10) Default rate by Education (filtered)**")
+    st.markdown("**10) Default rate by Education**")
     if "NAME_EDUCATION_TYPE" in df.columns:
         grp = df.groupby("NAME_EDUCATION_TYPE")["TARGET"].mean().sort_values(ascending=False).head(15)
         fig, ax = plt.subplots(figsize=(6,3))
