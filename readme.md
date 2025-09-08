@@ -96,8 +96,6 @@ streamlit run app/Home.py
 
 - Add Dockerfile for reproducible deployment.
 
-- Integrate modeling pipeline (train/test + SHAP explanations) and provide model scoring simulator.
-
 - Improve performance with precomputed groupbys, Downsampling of dataset.
 
 ## ⚡Live Website URL (hosted in streamlit cloud)
