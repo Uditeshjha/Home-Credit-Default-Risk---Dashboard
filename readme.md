@@ -96,7 +96,7 @@ streamlit run app/Home.py
 
 - Add Dockerfile for reproducible deployment.
 
-- Improve performance with precomputed groupbys, Downsampling of dataset.
+- Improve performance with precomputed groupbys and downsampling of dataset.
 
 ## ⚡Live Website URL (hosted in streamlit cloud)
 
