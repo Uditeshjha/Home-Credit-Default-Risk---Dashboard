@@ -17,7 +17,7 @@ PALETTE = get_palette()
 st.title("Demographics & Household Profile")
 
 # Load processed dataset
-df = ld.load_data("../data/processed/full_cleaned.csv")
+df = ld.load_data("data/processed/full_cleaned.csv")
 
 # Apply global filters
 filters = pp.get_global_filters(df)

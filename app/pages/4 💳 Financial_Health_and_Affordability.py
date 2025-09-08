@@ -14,7 +14,7 @@ PALETTE = get_palette()
 st.title("Financial Health & Affordability")
 
 # Load processed dataset
-df = ld.load_data("../data/processed/full_cleaned.csv")
+df = ld.load_data("data/processed/full_cleaned.csv")
 
 # Apply global filters
 filters = pp.get_global_filters(df)

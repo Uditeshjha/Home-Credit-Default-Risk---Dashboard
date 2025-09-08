@@ -22,7 +22,7 @@ st.title("Correlations, Drivers & Interactive Slice-and-Dice")
 st.write("Explore numeric correlations to TARGET and test candidate rules. All visuals respond to the global filters.")
 
 # Load & filter
-df_full = ld.load_data("../data/processed/full_cleaned.csv")
+df_full = ld.load_data("data/processed/full_cleaned.csv")
 filters = pp.get_global_filters(df_full)
 df = pp.apply_global_filters(df_full, filters)
 
@@ -84,8 +84,8 @@ kpis = [
     ("Corr(Age, TARGET)", f"{corr_age_target:.2f}" if not np.isnan(corr_age_target) else "N/A"),
     ("Corr(EmploymentYears, TARGET)", f"{corr_emp_target:.2f}" if not np.isnan(corr_emp_target) else "N/A"),
     ("Corr(FamilySize, TARGET)", f"{corr_family_target:.2f}" if not np.isnan(corr_family_target) else "N/A"),
-    ("Variance proxy (top5)", f"{variance_proxy:.3f}"),
-    ("# features |corr|>0.5", f"{int(n_high_corr)}"),
+    ("Variance proxy (top5)", f"{variance_proxy:.3f}")
+    # ("# features |corr|>0.5", f"{int(n_high_corr)}"),
 ]
 
 for i, (lab, val) in enumerate(kpis):

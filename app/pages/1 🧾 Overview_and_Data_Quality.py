@@ -34,7 +34,7 @@ st.title("Overview & Data Quality")
 st.write("KPIs, data quality checks and core distributions. All visuals respond to the global filters in the sidebar.")
 
 # Load the processed CSV
-df_full = ld.load_data("../data/processed/full_cleaned.csv")
+df_full = ld.load_data("data/processed/full_cleaned.csv")
 
 
 # Global filters

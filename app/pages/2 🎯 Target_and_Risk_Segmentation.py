@@ -24,7 +24,7 @@ st.title("Target & Risk Segmentation")
 st.write("Explore how repayment vs default varies across demographics and financial features.")
 
 # Load processed dataset
-df_full = ld.load_data("../data/processed/full_cleaned.csv")
+df_full = ld.load_data("data/processed/full_cleaned.csv")
 
 # Global filters
 filters = pp.get_global_filters(df_full)
