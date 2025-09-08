@@ -99,9 +99,9 @@ streamlit run app/Home.py
 
 - Improve performance with precomputed groupbys, Downsampling of dataset.
 
-## Live Website URL
+## ⚡Live Website URL (hosted in streamlit cloud)
 
-### https://home-credit-default-risk---dashboard.streamlit.app/
+#### https://home-credit-default-risk---dashboard.streamlit.app/
 
 📬 Contact & credits
 
